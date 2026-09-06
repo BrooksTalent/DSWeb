@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f97316">
+  <meta name="description" content="每次隨機抽出六個 1 至 49 的不重複號碼。">
+  <title>Mark 6 · 下期開什麼</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="machine" aria-labelledby="title">
+      <div class="topline">
+        <div>
+          <p class="eyebrow">MARK 6 · 下期開什麼</p>
+          <h1 id="title">六合彩金多寶 · 下期號碼</h1>
+        </div>
+        <span class="range">01–49</span>
+      </div>
+
+      <div class="draw-stage" aria-live="polite" aria-atomic="true">
+        <p class="stage-label" id="stageLabel">準備開始</p>
+        <div class="balls" id="currentBalls" aria-label="本次號碼">
+          <span class="placeholder">按下「開始」抽出 6 個號碼</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="start" id="startButton" type="button">
+          <span aria-hidden="true">▶</span> 開始
+        </button>
+        <button class="reset" id="resetButton" type="button">重設</button>
+      </div>
+
+      <div class="history-head">
+        <h2>開獎紀錄</h2>
+        <span id="drawCount">0 次</span>
+      </div>
+      <div class="empty" id="emptyState">
+        <div class="mini-balls" aria-hidden="true"><i></i><i></i><i></i></div>
+        <p>尚未有開獎結果</p>
+      </div>
+      <ol class="history" id="historyList" aria-label="開獎紀錄"></ol>
+      <p class="note">每次由 1 至 49 隨機抽出 6 個不重複號碼，僅供娛樂及模擬用途。
+      </p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
