@@ -1,51 +1,18 @@
 <!doctype html>
-<html lang="zh-HK">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f97316">
-  <meta name="description" content="每次隨機抽出六個 1 至 49 的不重複號碼。">
-  <title>Mark 6 · 下期開什麼</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+<html lang="zh-HK"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#b94a2f"><meta name="description" content="常用網站及個人工具快捷入口。"><title>DSWeb · 工作台</title><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="home-extra.css"></head>
 <body>
-  <main class="shell">
-    <section class="machine" aria-labelledby="title">
-      <div class="topline">
-        <div>
-          <p class="eyebrow">MARK 6 · 下期開什麼</p>
-          <h1 id="title">六合彩金多寶 · 下期號碼</h1>
-        </div>
-        <span class="range">01–49</span>
+  <header class="site-header"><a class="brand" href="./" aria-label="DSWeb 首頁"><span class="brand-mark" aria-hidden="true">DS</span><span><strong>DSWeb</strong><small>BROOKS TALENT OFFICE</small></span></a><span class="status"><i></i>工作台</span></header>
+  <main>
+    <section class="intro" aria-labelledby="page-title"><p class="kicker">QUICK ACCESS</p><h1 id="page-title">常用網站與工具</h1><p>一個位置，快速到達每日常用的網站和實用工具。</p></section>
+    <section class="section" aria-labelledby="websites-title"><div class="section-heading"><span class="section-number">01</span><div><p>連結</p><h2 id="websites-title">常用網站</h2></div></div>
+      <div class="grid websites">
+        <a class="card rust" href="https://psww.hk/" target="_blank" rel="noopener noreferrer"><span class="card-icon" aria-hidden="true">PS</span><span class="card-copy"><strong>寶成香港</strong><small>Po Shing (Worldwide)</small></span><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="card ink" href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><span class="card-icon google" aria-hidden="true">G</span><span class="card-copy"><strong>Google</strong><small>搜尋與網上服務</small></span><span class="arrow" aria-hidden="true">↗</span></a>
       </div>
-
-      <div class="draw-stage" aria-live="polite" aria-atomic="true">
-        <p class="stage-label" id="stageLabel">準備開始</p>
-        <div class="balls" id="currentBalls" aria-label="本次號碼">
-          <span class="placeholder">按下「開始」抽出 6 個號碼</span>
-        </div>
-      </div>
-
-      <div class="controls">
-        <button class="start" id="startButton" type="button">
-          <span aria-hidden="true">▶</span> 開始
-        </button>
-        <button class="reset" id="resetButton" type="button">重設</button>
-      </div>
-
-      <div class="history-head">
-        <h2>開獎紀錄</h2>
-        <span id="drawCount">0 次</span>
-      </div>
-      <div class="empty" id="emptyState">
-        <div class="mini-balls" aria-hidden="true"><i></i><i></i><i></i></div>
-        <p>尚未有開獎結果</p>
-      </div>
-      <ol class="history" id="historyList" aria-label="開獎紀錄"></ol>
-      <p class="note">每次由 1 至 49 隨機抽出 6 個不重複號碼，僅供娛樂及模擬用途。
-      </p>
+    </section>
+    <section class="section" aria-labelledby="tools-title"><div class="section-heading"><span class="section-number">02</span><div><p>內建</p><h2 id="tools-title">我的工具</h2></div></div>
+      <div class="grid tools"><a class="card tool" href="mark6/"><span class="card-icon balls" aria-hidden="true"><i>6</i></span><span class="card-copy"><strong>Mark 6 · 下期開什麼</strong><small>1–49 隨機號碼模擬器</small></span><span class="arrow" aria-hidden="true">→</span></a><a class="card tool tool-light" href="qr/"><span class="card-icon qr-icon" aria-hidden="true">▦</span><span class="card-copy"><strong>網址二維碼產生器</strong><small>將網址轉成可掃描 QR Code</small></span><span class="arrow" aria-hidden="true">→</span></a></div>
     </section>
   </main>
-  <script src="app.js"></script>
-</body>
-</html>
+  <footer><span>DSWeb</span><span>快捷 · 專注 · 實用</span></footer>
+</body></html>
